@@ -41,7 +41,7 @@ body{
     color: aliceblue;
     display: grid;
     place-content: center;
-    font-size: 55px;
+    font-size: 60px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     
@@ -113,9 +113,10 @@ body{
     background: black;
     color: whitesmoke;
     padding: 16px 35px;
-    border: 4px solid;
+    border: 2px solid;
+    border-image-outset: 4px;
   
-    border-image: linear-gradient(to right , red , blue)1;
+    border-image: linear-gradient(to right , red ,pink, blue)1;
     
   
 
