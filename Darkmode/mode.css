@@ -1,0 +1,18 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+.btn{
+    background: black;
+    color: white;
+    padding: 20px 50px;
+    cursor: pointer;
+    border: 3px solid;
+    border-image: linear-gradient(to right ,rgb(249, 30, 30) ,rgb(16, 96, 247))1;
+}
