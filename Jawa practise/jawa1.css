@@ -8,7 +8,7 @@ body{
     background: black;
     padding: 20px 50px;
     border: 5px solid;
-    border-image: linear-gradient(to right ,  blue,rgb(252, 19, 58))1;
+    border-image: linear-gradient(to right ,  rgb(2, 2, 240),rgb(252, 19, 58))1;
 
 }
 .btn a{
@@ -26,7 +26,7 @@ body{
 .container{
     width: 30%;
     background: black;
-    color: #fff;
+    color: #680beb;
 
     padding: 20px;
     display: grid;

@@ -88,46 +88,65 @@
 // array.push(23)
 // console.log(array)
 //question 2 
-let number = 23;
-let a = 23;
-do{
-  console.log("enter a number")
-}while(a!= 23){
-  console.log("you have entered a correct no.")
+// let number = 23;
+// let a = 23;
+// do{
+//   console.log("enter a number")
+// }while(a!= 23){
+//   console.log("you have entered a correct no.")
   
-      }
+//       }
 
-      alert("Enter the value of a ")
-let a = prompt("Enter a Here")
-let b = Number.parseInt(a)
-let write = confirm("Do you want to wrtie it on the page")
-if(write){
-   document.write(b)
+//       alert("Enter the value of a ")
+// let a = prompt("Enter a Here")
+// let b = Number.parseInt(a)
+// let write = confirm("Do you want to wrtie it on the page")
+// if(write){
+//    document.write(b)
   
-}
-else{
-  alert("let me please write it on the page")
-}
+// }
+// else{
+//   alert("let me please write it on the page")
+// }
                   
-let runAgain = true;
+// let runAgain = true;
 
-const canDrive = (age) => {
-  return age >= 18 ? true : false
+// const canDrive = (age) => {
+//   return age >= 18 ? true : false
+// }
+
+// while (runAgain) {
+//   let age = prompt("Enter your age")
+//   age = Number.parseInt(age)
+//   if (age < 0) {
+//     console.error("Please enter a valid age");
+//     break;
+//   }
+
+//   if (canDrive(age)) {
+//     alert("Yes you can drive")
+//   }
+//   else {
+//     alert("You cannot drive")
+//   }
+//   runAgain = confirm("Do you want to play again?")
+// }
+const loadScript = async (src)=>{
+  return new promise((resolve, reject) => {
+    let script = document.createElement("script")
+    script.src = src
+    script.onload = () =>{
+      resolve(src)
+      
+    }
+    document.head.append(script)
+
+
+  })
 }
+const main2 = async () => {
+let a = await loadScript("https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js")
+ console.log(a)
 
-while (runAgain) {
-  let age = prompt("Enter your age")
-  age = Number.parseInt(age)
-  if (age < 0) {
-    console.error("Please enter a valid age");
-    break;
-  }
-
-  if (canDrive(age)) {
-    alert("Yes you can drive")
-  }
-  else {
-    alert("You cannot drive")
-  }
-  runAgain = confirm("Do you want to play again?")
 }
+main2()
