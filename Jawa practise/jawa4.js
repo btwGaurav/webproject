@@ -1,10 +1,15 @@
-// let a = document.querySelector(".btn")
+let p = new Promise((resolve,reject) =>{
+    let a = 1 + 1;
+    if(a == 2){
+    resolve("success")
+    }else{
+        reject("Failed")
+    }
+})
 
-// a.addEventListener('click', function(){
-// alert("button was clicked")
-// })
-let signal= () => {
-    alert("Hello world is printed in console")
-}
-let b = console.log("hello world" , signal())
-
+p.then((message) => {
+        console.log("This is in the then" + message)
+    }
+).catch((message) => {
+    console.log("this is in catch" + message)
+})
